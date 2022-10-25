@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #1e40af;
+  --secondary-color: #dbeafe;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -5,12 +10,17 @@
 
 .wrapper{
   overflow-x: hidden;
-  overflow-y: auto;    
+  overflow-y: auto;  
+  background-image: url("cars.webp");  
 }
 
 .wrapper h1{
-  margin-top: 30px;
+  padding: 10px;
   text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .wrapper p{
@@ -26,11 +36,13 @@
 }
 
 .wrapper .form-container{
-  width: 500px;
-  height: 400px;
-  background-color: #e4e4e4;
+  width: 320px;
+  height: 420px;
+  background-color: var(--secondary-color);
   margin: 20px auto;
-  padding: 20px;   
+  padding: 20px; 
+  border-radius: 10px;  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .wrapper .form-container .btn{
@@ -38,12 +50,22 @@
 }
 
 .wrapper .view-container{
-  width: 600px;    
-  background-color: #e4e4e4;
+  width: 650px;    
+  background-color: var(--secondary-color);
   margin: 20px auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.table th {
+  color: white;
+}
+
+thead {
+  background-color: var(--primary-color);
 }
 
 .delete-btn{
